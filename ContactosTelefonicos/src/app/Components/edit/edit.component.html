@@ -1,0 +1,24 @@
+<div class="container">
+    <form class="row g-5">
+        <div class="col-6">
+            <label for="inputAddress" class="form-label">Nombre</label>
+            <input type="text" class="form-control" [(ngModel)]="editarContacto.Nombre" id="nombre" name="nombre" placeholder="Nombre de Contacto">
+        </div>
+        <div class="col-6">
+            <label for="inputAddress" class="form-label">Teléfono</label>
+            <input type="number" class="form-control" [(ngModel)]="editarContacto.Telefono" id="telefono" name="telefono" placeholder="Teléfono de Contacto" required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" [(ngModel)]="editarContacto.CorreoElectronico" id="mail" name="mail" placeholder="mail">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" [(ngModel)]="editarContacto.FechaNacimiento" id="fecha" name="fecha">
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-outline-success" (click)="actualizarContacto()"><i class="fa-solid fa-floppy-disk"></i>  ACTUALIZAR</button>
+        </div>
+    </form>
+</div>
